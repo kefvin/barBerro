@@ -1,14 +1,17 @@
 package Segon.barBerro;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Comandes {
 	
-	Comanda comanda = new Comanda();
+	List<Comanda> comanda = new ArrayList();
 	
 	public Comandes(){
 		
 	}
 	
-	public Comandes(Comanda comanda){
+	public Comandes(List<Comanda> comanda){
 		this.comanda = comanda;
 	}
 

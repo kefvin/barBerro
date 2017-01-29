@@ -14,6 +14,7 @@ public class Comanda {
 
 	public Comanda(Client client, List<Beguda> begudes){
 		this.client = client;
+		this.begudes = begudes;
 	}
 
 }

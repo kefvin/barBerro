@@ -42,7 +42,7 @@ public class App
     		JAXBContext context = JAXBContext.newInstance(Comandes.class);
     		
     		Unmarshaller lector = context.createUnmarshaller();
-    		Comandes comandes = (Comandes) lector.unmarshal(new File("D:\\clase\\2DAW\\workspace\\barBerro\\src\\main\\resources\\comandes1.xml"));
+    		Comandes comandes = (Comandes) lector.unmarshal(new File("D:\\clase\\2DAW\\Programacio\\Git\\barBerro\\barBerro\\src\\main\\resources\\comandes1.xml"));
     		System.out.println(comandes);
     		
     		// ESCRIBIR
@@ -50,7 +50,7 @@ public class App
     		creador.setProperty( Marshaller.JAXB_FORMATTED_OUTPUT, true ); // Da formato al guardado
     		creador.marshal(comandes, System.out); // Lo muestra por consola (Puede que haya que cambiar "comandes")
     		// Lo graba en un archivo (Puede que haya que cambiar "comandes")
-	        creador.marshal(comandes, new File("D:\\clase\\2DAW\\workspace\\barBerro\\src\\main\\resources\\comandes.xml")); 
+	        creador.marshal(comandes, new File("D:\\clase\\2DAW\\Programacio\\Git\\barBerro\\barBerro\\src\\main\\resources\\comandes.xml")); 
     		
     	}catch (JAXBException e) {
 			// TODO Auto-generated catch block
