@@ -43,7 +43,9 @@ public class App
     		
     		Unmarshaller lector = context.createUnmarshaller();
     		Comandes comandes = (Comandes) lector.unmarshal(new File("D:\\clase\\2DAW\\Programacio\\Git\\barBerro\\barBerro\\src\\main\\resources\\comandes1.xml"));
-    		System.out.println(comandes);
+    		
+    		Runner runner = new Runner(comandes);
+    		
     		
     		// ESCRIBIR
     		Marshaller creador = context.createMarshaller();
