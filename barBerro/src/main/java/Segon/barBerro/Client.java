@@ -1,5 +1,6 @@
 package Segon.barBerro;
 
+
 public class Client {
 	
 	String nom = null;
@@ -29,5 +30,7 @@ public class Client {
 	public void setCognom(String cognom) {
 		this.cognom = cognom;
 	}
+
+	
 
 }

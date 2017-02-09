@@ -1,5 +1,6 @@
 package Segon.barBerro;
 
+
 public class Beguda {
 	
 	String nom = null;
@@ -10,10 +11,11 @@ public class Beguda {
 	}
 	
 	public Beguda(String nom, int quantitat){
+		
 		this.nom = nom;
 		this.quantitat = quantitat;
 	}
-	
+
 	public String getNom() {
 		return nom;
 	}
@@ -29,5 +31,7 @@ public class Beguda {
 	public void setQuantitat(int quantitat) {
 		this.quantitat = quantitat;
 	}
+	
+	
 
 }

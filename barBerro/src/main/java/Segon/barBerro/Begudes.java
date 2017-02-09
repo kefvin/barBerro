@@ -7,23 +7,24 @@ import javax.xml.bind.annotation.XmlElement;
 
 public class Begudes {
 	
-	@XmlElement(name="beguda")
-	List<Beguda> begudes = new ArrayList<Beguda>();
+
+	List<Beguda> beguda = new ArrayList<Beguda>();
 	
 	public Begudes(){
 		
 	}
 	
-	public Begudes(List<Beguda> begudes){
-		this.begudes=begudes;
+	public Begudes(List<Beguda> begudesL){
+		this.beguda=begudesL;
 	}
 
-	public List<Beguda> getBegudes() {
-		return begudes;
+	public List<Beguda> getBeguda() {
+		return beguda;
 	}
 
-	public void setBegudes(List<Beguda> begudes) {
-		this.begudes = begudes;
+	public void setBeguda(List<Beguda> beguda) {
+		this.beguda = beguda;
 	}
 
+	
 }

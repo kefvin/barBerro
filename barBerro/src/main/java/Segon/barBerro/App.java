@@ -20,9 +20,7 @@ import org.xml.sax.SAXException;
 public class App 
 {
     public static void main( String[] args )
-    {
-    	// Hay que leer el archivo con SAX y escribiro con JAXB
-    	
+    {    	
         // Tengo que buscar las "comandas", dentro las "begudes" y dentro de esas "begudes"
     	// tengo que hacer que solo haya una "beguda" que como nombre tenga cerbeza y solo haya 1
     	// Ojo! En una comanda->begudes, puede haber más de una etiqueta "beguda"
@@ -45,6 +43,7 @@ public class App
     		Comandes comandes = (Comandes) lector.unmarshal(new File("D:\\clase\\2DAW\\Programacio\\Git\\barBerro\\barBerro\\src\\main\\resources\\comandes1.xml"));
     		
     		Runner runner = new Runner(comandes);
+    		runner.buscaBegudesComanda();
     		
     		
     		// ESCRIBIR
